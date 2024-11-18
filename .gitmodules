@@ -13,3 +13,6 @@
 [submodule "extern/eat"]
 	path = extern/eat
 	url = ../eat.git
+[submodule "extern/fabm"]
+	path = extern/fabm
+	url = git@github.com:fabm-model/fabm.git
