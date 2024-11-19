@@ -16,3 +16,6 @@
 [submodule "extern/fabm-spectral"]
 	path = extern/fabm-spectral
 	url = https://github.com/pmlmodelling/fabm-spectral.git
+[submodule "setups/setup_BFM1D_BOUSSOLE"]
+	path = setups/setup_BFM1D_BOUSSOLE
+	url = git@github.com:gocchipintive/setup_BFM1D_BOUSSOLE.git
