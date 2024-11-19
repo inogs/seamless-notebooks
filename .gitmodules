@@ -10,3 +10,9 @@
 [submodule "extern/parsac"]
 	path = extern/parsac
 	url = https://github.com/inogs/parsac.git
+[submodule "extern/bfmforfabm"]
+	path = extern/ogs
+	url = git@github.com:inogs/bfmforfabm.git
+[submodule "extern/fabm-spectral"]
+	path = extern/fabm-spectral
+	url = https://github.com/pmlmodelling/fabm-spectral.git
