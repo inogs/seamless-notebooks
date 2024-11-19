@@ -5,7 +5,7 @@
 	path = extern/eat
 	url = https://github.com/BoldingBruggeman/eat.git
 [submodule "extern/code"]
-	path = extern/code
+	path = extern/gotm
 	url = https://github.com/gotm-model/code.git
 [submodule "extern/parsac"]
 	path = extern/parsac
