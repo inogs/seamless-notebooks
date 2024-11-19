@@ -1,18 +1,3 @@
-[submodule "extern/gotm"]
-	path = extern/gotm
-	url = ../../gotm-model/code.git
-[submodule "extern/ersem"]
-	path = extern/ersem
-	url = ../../pmlmodelling/ersem.git
-[submodule "extern/pisces"]
-	path = extern/pisces
-	url = ../fabm-pisces.git
-[submodule "extern/parsac"]
-	path = extern/parsac
-	url = ../parsac.git
-[submodule "extern/eat"]
-	path = extern/eat
-	url = ../eat.git
 [submodule "extern/fabm"]
 	path = extern/fabm
 	url = git@github.com:fabm-model/fabm.git
