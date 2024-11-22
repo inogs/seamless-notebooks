@@ -20,7 +20,7 @@ You may in the meantime be able to continue these instructions by executing `eva
 Now obtain the repository with setups and scripts:
 
 ```
-git clone --recursive https://github.com/BoldingBruggeman/seamless-notebooks.git
+git clone --recursive git@github.com:inogs/seamless-notebooks.git
 cd seamless-notebooks
 conda env create -f environment.yml
 conda activate seamless-bb
