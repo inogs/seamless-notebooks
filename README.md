@@ -24,7 +24,7 @@ git clone --recursive git@github.com:inogs/seamless-notebooks.git
 cd seamless-notebooks
 conda env create -f environment.yml
 conda activate seamless-bb
-bash ./install
+bash ./my_install
 ```
 
 # Staying up to date
@@ -36,7 +36,7 @@ conda activate seamless-bb
 git pull --recurse-submodules
 git submodule update --init --recursive
 conda env update -f environment.yml
-bash ./install
+bash ./my_install
 ```
 
 The last two commands update the conda (Python) environment and GOTM-FABM, respectively.
