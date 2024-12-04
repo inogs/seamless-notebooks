@@ -42,6 +42,25 @@ bash ./my_install
 The last two commands update the conda (Python) environment and GOTM-FABM, respectively.
 Depending on the changes in the repository, they may not be needed, but there is no harm in running them just in case - it just takes a little longer.
 
+# Running a 0-D simulation of BFM
+
+Go to the setup directory
+
+```
+cd setups/0D-ogs
+```
+
+Link a configuration file 
+```
+ln -s ../../extern/ogs/fabm_monospectral_2xDetritus.yaml fabm.yaml
+```
+
+Run the simulation
+```
+python model.py
+```
+
+
 # Running a parallel sensitivity analysis
 
 First, initialize your Python environment with:
