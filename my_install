@@ -13,13 +13,13 @@ FABM_ARGS="-DFABM_INSTITUTES=gotm;msi;ogs;spectral -DFABM_OGS_BASE=${REPO_DIR}/e
 # Build pyfabm
 #WORK_DIR=mktemp -d
 WORK_DIR=${REPO_DIR}/work
-#mkdir -p $WORK_DIR
-#cd ${WORK_DIR}
-#cmake ${REPO_DIR}/extern/fabm/src/drivers/python $FABM_ARGS -DCMAKE_INSTALL_PREFIX=${WORK_DIR}
-#make  install
+mkdir -p $WORK_DIR
+cd ${WORK_DIR}
+cmake ${REPO_DIR}/extern/fabm/src/drivers/python $FABM_ARGS -DCMAKE_INSTALL_PREFIX=${WORK_DIR}
+make  install
 ##make -j4 install
-#cd -
-#rm -rf ${WORK_DIR}
+cd -
+rm -rf ${WORK_DIR}
 
 # Build gotm-fabm
 #WORK_DIR=mktemp -d
