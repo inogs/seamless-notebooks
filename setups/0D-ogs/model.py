@@ -14,7 +14,6 @@ model.dependencies['practical_salinity'].value = 30.
 model.dependencies['density'].value = 1000.
 model.dependencies['depth'].value = 1.
 model.dependencies['pressure'].value = 1.
-model.dependencies['isBen'].value = 1.
 model.dependencies['longitude'].value = 0.
 model.dependencies['latitude'].value = 0.
 model.dependencies['surface_downwelling_shortwave_flux'].value = 50.
