@@ -42,7 +42,7 @@ bash ./my_install
 The last two commands update the conda (Python) environment and GOTM-FABM, respectively.
 Depending on the changes in the repository, they may not be needed, but there is no harm in running them just in case - it just takes a little longer.
 
-# Running a 0-D simulation of BFM
+# Running a 0-D simulation of FABM-BFM
 
 Go to the setup directory
 
@@ -60,6 +60,45 @@ Run the simulation
 python model.py
 ```
 
+# Running a 1-D simulation of GOTM-FABM-BFM
+
+Go to the setup directory
+
+```
+cd setups/setup_BFM1D_BOUSSOLE
+```
+
+A configuration file for the BFM of name `fabm.yaml` is needed, several are present in the setup directory and in the code directory `seamless-notebooks/extern/ogs`, e.g. a configuration file with 60 phytoplankton functional types
+
+```
+ln -s fabm_EXP21_60PFTs_final.yaml fabm.yaml
+```
+
+A configuration file for the turbolence model GOTM of name 'gotm.yaml', several are present in the setup directory, e.g. a configuration with multispectral irradiance and migration of plankton
+
+```
+ln -s gotm_multispectral_migration_5y_media_final.yaml gotm.yaml
+```
+
+Additional irradiance file are needed, two possibility are given: considering 4 diverse PFT for "light functions": `bcs_4PFTs` or 9 diverse PFT `bcs_9PFTs`
+
+```
+ln -s bcs_9PFTs bcs
+```
+
+During compilation a launcher of the model was created in  `seamless-notebooks/bin`, we link it in the setup directory
+
+```
+ln -s ../../bin/gotm gotm.xx
+```
+
+Launch the simulation
+
+```
+./gotm.xx --ignore_unknown_config
+```
+
+The model output are saved in `result.nc`
 
 # Running a parallel sensitivity analysis
 
